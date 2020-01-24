@@ -1,0 +1,13 @@
+{
+  "name": "typechain",
+  "version": "1.0.0",
+  "description": "blockchain made by typescript",
+  "main": "index.js",
+  "repository": "https://github.com/minimal1/TypeChain",
+  "author": "minimal",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  }
+}
