@@ -1,20 +1,21 @@
 /** @format */
-interface Human {
-  name: string;
-  age: number;
-  gender: string;
-}
+class Human {
+  public name: string;
+  public age: number;
+  public gender: string;
 
-const person = {
-  name: 'minimal',
-  age: 22,
-  gender: 'male'
-};
+  constructor(name: string, age: number, gender: string) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+}
+const min = new Human('minimal', 26, 'male');
 
 const sayHi = (person: Human): string => {
   return `Hi ${person.name}, You are ${person.age}. You are a ${person.gender}!`;
 };
 
-console.log(sayHi(person));
+console.log(sayHi(min));
 
 export {};
